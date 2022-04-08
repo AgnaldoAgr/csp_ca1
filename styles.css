@@ -3,8 +3,70 @@ table {
     border-collapse: collapse;
   }
   
-  td, th {
+  td, th, caption {
     border: 1px solid #999;
-    padding: 0.5rem;
-    text-align: left;
+    padding: 0.4rem;
+    text-align: center;
   }
+
+/*Content table styling*/
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.5em;
+  }
+  
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.5em;    
+  }
+  
+  li ol > li {
+    margin: 0;
+  }
+  
+  li ol > li:before {
+    content: counters(item, ".") " ";
+  }  
+
+
+/*Table cells for climate */  
+.parameter {
+    background-color: gray;
+    color: black;
+}  
+/* Background colors */
+.red{
+    background-color: rgb(255, 0, 0);
+}
+.light_red{
+    background-color: rgb(250, 46, 46);
+}
+.orangered{
+    background-color: orangered;
+}
+.orange{
+    background-color: orange;
+}
+.light_orange{
+    background-color: rgb(248, 187, 74);
+}
+.whiteblue{
+    background-color: rgb(222, 222, 252);
+}
+.darkblue{
+    background-color: rgb(0, 0, 175);
+    color: white;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
