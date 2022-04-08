@@ -5,9 +5,6 @@ p{
 table {
     border-collapse: collapse;
 
-body{
-  background-color:rgb(199, 199, 199);
-}  
   td, th, caption {
     border: 1px solid rgb(0, 0, 0);
     padding: 0.4rem;
