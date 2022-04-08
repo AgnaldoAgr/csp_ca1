@@ -4,11 +4,19 @@ table {
   }
   
   td, th, caption {
-    border: 1px solid #999;
+    border: 1px solid rgb(0, 0, 0);
     padding: 0.4rem;
     text-align: center;
   }
-
+  * {
+    box-sizing: border-box;
+  }
+.content_table{
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    padding: 5px;
+    
+}
 /*Content table styling*/
   ol {
     list-style-type: none;
@@ -69,4 +77,10 @@ table {
 .blue{
     background-color: blue;
     color: white;
+}
+
+/*Image table*/
+.imgtable{
+    background-color: rgb(206, 206, 206);
+    float: right;
 }
